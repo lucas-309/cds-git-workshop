@@ -6,9 +6,8 @@ import React, { useEffect, useRef, useState } from "react";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import imdbImg from "../assets/img/imdb.png";
 import logo from "../assets/img/logo.png";
-import vibesyncImg from "../assets/img/vibesync.png";
+import { projects } from "../data/projects";
 // import Loader from './Loader';
 
 import "../assets/css/header.css";
@@ -85,29 +84,41 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
     setIsTyping(false);
   };
 
-  // projects
+  const latestProjects = projects.slice(0, 2);
 
-  const projects = [
-    {
-      id: 1,
-      title: "imdb",
-      description:
-        "In-Memory Database (IMDb) is an implementation of the Redis protocol.",
-      img: imdbImg,
-      link: "https://github.com/CornellDataScience/imdb"
-    },
-    {
-      id: 2,
-      title: "VibeSync",
-      description:
-        "VibeSync is a research project which aims to explore the boundary of ML research with music. \
-    Inspired by recent advances with contrastive learning and joint language-audio embeddings, we aim to build \
-    a proof-of-concept system where a user specifies a playlist title and receives recommended songs. We want \
-    to see how far take this and what insights we can gain.",
-      img: vibesyncImg,
-      link: "https://github.com/CornellDataScience/VibeSync"
-    },
+  const searchIndex = [
+    { title: "About", description: "Learn about Cornell Data Science, our mission, and our team.", href: "/about", type: "page", external: false },
+    { title: "Projects", description: "Browse all CDS projects across every semester.", href: "/projects", type: "page", external: false },
+    { title: "Alumni", description: "CDS alumni network and past members.", href: "/alumni", type: "page", external: false },
+    { title: "E-Board", description: "Meet the Cornell Data Science executive board.", href: "/eboard", type: "page", external: false },
+    { title: "Subteams", description: "Our specialized subteams: MLE, DE, QF, and DS.", href: "/subteams", type: "page", external: false },
+    { title: "Machine Learning Engineering", description: "The MLE subteam builds and deploys production ML systems.", href: "/subteam/machine-learning-engineering", type: "page", external: false },
+    { title: "Data Engineering", description: "The DE subteam builds data pipelines and infrastructure.", href: "/subteam/data-engineering", type: "page", external: false },
+    { title: "Quantitative Finance", description: "The QF subteam applies data science to financial markets.", href: "/subteam/quantitative-finance", type: "page", external: false },
+    { title: "Data Science", description: "The DS subteam tackles applied machine learning and analytics.", href: "/subteam/data-science", type: "page", external: false },
+    { title: "Education", description: "CDS education resources, workshops, and learning materials.", href: "/education", type: "page", external: false },
+    { title: "Contact", description: "Get in touch with Cornell Data Science.", href: "/contact", type: "page", external: false },
+    { title: "Recruitment", description: "Apply to join Cornell Data Science.", href: "/recruitment", type: "page", external: false },
+    { title: "Coffee Chats", description: "Schedule a coffee chat with a CDS member.", href: "/coffee-chats", type: "page", external: false },
+    { title: "Sponsorship", description: "Partner with or sponsor Cornell Data Science.", href: "/sponsorship", type: "page", external: false },
+    ...projects.map(p => ({
+      title: p.title,
+      description: p.description,
+      href: p.githubLink ?? "/projects",
+      type: "project" as const,
+      external: !!p.githubLink,
+      semester: p.semester,
+    })),
   ];
+
+  const searchResults = inputValue.trim().length > 0
+    ? searchIndex
+        .filter(item =>
+          item.title.toLowerCase().includes(inputValue.toLowerCase()) ||
+          item.description.toLowerCase().includes(inputValue.toLowerCase())
+        )
+        .slice(0, 6)
+    : [];
 
   return (
     <>
@@ -342,19 +353,19 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                 </Link>
               </div>
               <div className="text-4xl mt-10 mb-10 space-y-5 font-light">
-                {/* map projects, max 2 */}
-                {projects.slice(0, 2).map((project) => (
+                {/* map 2 newest projects */}
+                {latestProjects.map((project, index) => (
                   <div
-                    key={project.id}
+                    key={index}
                     className={`group transition-opacity duration-500`}
                   >
                     <p className="text-sm text-gray-300 mb-2 group-hover:text-gray-400">
                       {project.title}
                     </p>
-                    <Link href={project.link} target="_blank" rel="noopener noreferrer">
+                    <Link href={project.githubLink ?? "/projects"} target="_blank" rel="noopener noreferrer">
                       <img
-                        src={project.img.src}
-                        alt="Project Image"
+                        src={typeof project.imageUrl === 'string' ? project.imageUrl : project.imageUrl.src}
+                        alt={project.title}
                         className="w-full h-48 object-cover mb-2 group-hover:opacity-75 transition-opacity duration-300"
                         width={40}
                         height={40}
@@ -451,37 +462,75 @@ const Header: React.FC<HeaderProps> = ({ isHome }) => {
                 </button>
               )}
             </div>
-            <div className="mt-8 text-gray-800 text-xs md:text-lg">
-              <span className="block md:inline-block mr-4 text-xs md:text-base text-gray-500 whitespace-nowrap font-semibold tracking-wider">
-                FREQUENTLY SEARCHED FOR
-              </span>
-              <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
-                <span className={`mr-4 ${fadeInClasses[0]} group`}>
-                  <Link
-                    href="/recruitment"
-                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
-                  >
-                    Recruitment
-                  </Link>
-                </span>
-                <span className={`mr-4 ${fadeInClasses[1]} group`}>
-                  <Link
-                    href="/coffee-chats"
-                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
-                  >
-                    Coffee Chats
-                  </Link>
-                </span>
-                <span className={`mr-4 ${fadeInClasses[2]} group`}>
-                  <Link
-                    href="/eboard"
-                    className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
-                  >
-                    E-Board
-                  </Link>
-                </span>
+            {isTyping ? (
+              <div className="mt-8">
+                {searchResults.length > 0 ? (
+                  <>
+                    <span className="text-xs text-gray-500 font-semibold tracking-wider">
+                      {searchResults.length} RESULT{searchResults.length !== 1 ? "S" : ""}
+                    </span>
+                    <ul className="mt-4 divide-y divide-gray-100">
+                      {searchResults.map((item, i) => (
+                        <li key={i}>
+                          <Link
+                            href={item.href}
+                            target={item.external ? "_blank" : undefined}
+                            rel={item.external ? "noopener noreferrer" : undefined}
+                            onClick={() => { setIsSearchView(false); clearInput(); }}
+                            className="flex items-center justify-between py-3 group hover:bg-gray-50 px-2 rounded transition-colors duration-150"
+                          >
+                            <div className="flex items-center gap-3 min-w-0">
+                              <span className={`shrink-0 text-xs font-semibold px-2 py-0.5 rounded uppercase tracking-wide ${item.type === "project" ? "bg-blue-100 text-blue-700" : "bg-gray-100 text-gray-500"}`}>
+                                {item.type === "project" ? (item as { semester?: string }).semester ?? "project" : "page"}
+                              </span>
+                              <span className="text-gray-900 font-medium text-base md:text-lg truncate">{item.title}</span>
+                              <span className="hidden md:block text-gray-400 text-sm truncate">{item.description.slice(0, 80)}{item.description.length > 80 ? "…" : ""}</span>
+                            </div>
+                            <svg className="shrink-0 w-4 h-4 text-gray-300 group-hover:text-gray-600 group-hover:translate-x-1 transition-all duration-150 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
+                            </svg>
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <p className="text-gray-400 text-base mt-4">No results for &ldquo;{inputValue}&rdquo;</p>
+                )}
               </div>
-            </div>
+            ) : (
+              <div className="mt-8 text-gray-800 text-xs md:text-lg">
+                <span className="block md:inline-block mr-4 text-xs md:text-base text-gray-500 whitespace-nowrap font-semibold tracking-wider">
+                  FREQUENTLY SEARCHED FOR
+                </span>
+                <div className="flex flex-wrap gap-4 mt-4 md:mt-0">
+                  <span className={`mr-4 ${fadeInClasses[0]} group`}>
+                    <Link
+                      href="/recruitment"
+                      className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
+                    >
+                      Recruitment
+                    </Link>
+                  </span>
+                  <span className={`mr-4 ${fadeInClasses[1]} group`}>
+                    <Link
+                      href="/coffee-chats"
+                      className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
+                    >
+                      Coffee Chats
+                    </Link>
+                  </span>
+                  <span className={`mr-4 ${fadeInClasses[2]} group`}>
+                    <Link
+                      href="/eboard"
+                      className="underline hover:text-gray-600 transition-all duration-300 text-lg hover:scale-105 inline-block bg-gray-100 px-4 py-2 rounded-full border border-gray-200"
+                    >
+                      E-Board
+                    </Link>
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
