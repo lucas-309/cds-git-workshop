@@ -60,10 +60,6 @@ const Recruitment: React.FC = () => {
                       Upperclassmen Applications
                     </h3>
                     <p className="text-gray-700 text-center">
-                      <span className="font-medium">Opens:</span> Monday, August
-                      18th (morning)
-                    </p>
-                    <p className="text-gray-700 text-center">
                       <span className="font-medium">Due:</span> Thursday,
                       January 29th at 11:59 PM
                     </p>
@@ -82,10 +78,6 @@ const Recruitment: React.FC = () => {
                     <h3 className="text-lg font-semibold text-green-700 text-center">
                       Freshmen/Transfer Applications
                     </h3>
-                    <p className="text-gray-700 text-center">
-                      <span className="font-medium">Opens:</span> Monday,
-                      September 1st (morning)
-                    </p>
                     <p className="text-gray-700 text-center">
                       <span className="font-medium">Due:</span> Thursday,
                       January 29th at 11:59 PM
@@ -117,104 +109,35 @@ const Recruitment: React.FC = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h3 className="text-lg font-semibold text-blue-700">
-                      Upperclassmen Info Session
+                      CDS x CFT (Cornell FinTech) Info Session
                     </h3>
                     <p className="text-gray-700">
                       <span className="font-medium">Date:</span> Tuesday,
-                      September 2nd
+                      January 27th, 2026
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 5:00 - 6:00 PM
+                      <span className="font-medium">Time:</span> 6:30 PM
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Tang 203
+                      <span className="font-medium">Location:</span> Hollister 110
+                    </p>
+                    <p className="text-gray-600 text-sm mt-2 italic">
+                      General info session for recruitment
                     </p>
                   </div>
                   <div className="bg-white p-4 rounded-lg shadow-sm">
                     <h3 className="text-lg font-semibold text-green-700">
-                      Freshmen/Transfers Info Session #1
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Wednesday,
-                      September 24th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 4:30 - 5:30 PM
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Philips 219
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-green-700">
-                      Freshmen/Transfers Info Session #2
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Monday, October
-                      6th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 5:00 - 6:00 PM
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Hollister
-                      B14
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-purple-700">
                       CDS x AppDev Info Session
                     </h3>
                     <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Saturday,
-                      September 27th
+                      <span className="font-medium">Date:</span> Wednesday,
+                      January 28th, 2026
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 5:00 - 6:00 PM
+                      <span className="font-medium">Time:</span> 7:00 - 8:00 PM
                     </p>
                     <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> RPCC or
-                      Morrison (TBD)
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Special Events */}
-              <div className="bg-gradient-to-r from-green-50 to-yellow-50 p-6 rounded-lg border-l-4 border-green-500">
-                <h2 className="text-2xl font-semibold text-green-800 mb-4">
-                  🎉 Special Events
-                </h2>
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-green-700">
-                      Project Team Fest
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Thursday,
-                      September 4th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> 4:00 - 6:00 PM
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> Duff
-                    </p>
-                  </div>
-                  <div className="bg-white p-4 rounded-lg shadow-sm">
-                    <h3 className="text-lg font-semibold text-yellow-700">
-                      Club Fest
-                    </h3>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Date:</span> Saturday,
-                      September 13th
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Time:</span> Noon (More
-                      details TBA)
-                    </p>
-                    <p className="text-gray-700">
-                      <span className="font-medium">Location:</span> TBA
+                      <span className="font-medium">Location:</span> Tang 203
                     </p>
                   </div>
                 </div>
