@@ -32,19 +32,19 @@ export const projects: Project[] = [
   },
   {
     semester: "Fall 2025",
-    title: "Millennium Data Quality",
-    description: "A collaboration between Millennium and CDS focused on building a backtesting framework for quantitative trading strategies. Supports equity portfolios, performance metrics, and strategy evaluation against historical S&P 500 data, including Mean Reversion, Momentum, and Pairs Trading strategies.",
-    imageUrl: "https://opengraph.githubassets.com/1/lucas-309/millennium-data-quality-25-26",
-    githubLink: "https://github.com/lucas-309/millennium-data-quality-25-26",
-    presentationLink: null,
-  },
-  {
-    semester: "Fall 2025",
     title: "LiveDance",
     description: "LiveDance is a real-time dance coach powered by computer vision. It tracks a user's body pose from a live camera feed and compares it frame-by-frame to a reference dance video, providing corrective feedback to help users match the moves.",
     imageUrl: "https://opengraph.githubassets.com/1/CornellDataScience/LiveDance",
     githubLink: "https://github.com/CornellDataScience/LiveDance",
     presentationLink: "https://docs.google.com/presentation/d/1Cs1tKVWiajUJ8IOrOuyVbK_Yf62rw071_pWDC-P2L1Y/edit?usp=sharing",
+  },
+  {
+    semester: "Fall 2025",
+    title: "Millennium Data Quality",
+    description: "A collaboration between Millennium and CDS focused on building a backtesting framework for quantitative trading strategies. Supports equity portfolios, performance metrics, and strategy evaluation against historical S&P 500 data, including Mean Reversion, Momentum, and Pairs Trading strategies.",
+    imageUrl: "https://opengraph.githubassets.com/1/lucas-309/millennium-data-quality-25-26",
+    githubLink: "https://github.com/lucas-309/millennium-data-quality-25-26",
+    presentationLink: null,
   },
   {
     semester: "Fall 2024",
