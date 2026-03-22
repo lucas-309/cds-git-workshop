@@ -26,6 +26,7 @@ import RyanLeeImg from "../../assets/img/members/RyanLee.jpg";
 import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import SkaiImg from "../../assets/img/members/SkaiNzeuton.jpg";
 import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
+import JoyWang from "../../assets/img/members/JoyWang.jpg";
 
 const members = [
   {
@@ -218,6 +219,13 @@ const members = [
     img: MukundGaur.src,
     linkedin: null,
   },
+  {
+    title: "Member",
+    name: "Joy Wang",
+    description: "Sample Text",
+    img: JoyWang.src,
+    linkedin: "https://www.linkedin.com/in/joy-wang0222/",
+  }
 ];
 
 const DataEngineeringSubteam: React.FC = () => {
