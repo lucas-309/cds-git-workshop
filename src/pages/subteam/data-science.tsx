@@ -11,6 +11,7 @@ import DarrenImg from "../../assets/img/members/DarrenKey.jpg";
 import DenizImg from "../../assets/img/members/DenizBoloni-Turgut.jpg";
 import EricDoImg from "../../assets/img/members/EricDo.jpg";
 import EricGuoImg from "../../assets/img/members/EricGuo.jpg";
+import EmilyNgImg from "../../assets/img/members/EmilyNg.jpg";
 import ImaniImg from "../../assets/img/members/ImaniFinkley.jpg";
 import JakobImg from "../../assets/img/members/JakobSilver.jpg";
 import JasonImg from "../../assets/img/members/JasonZheng.jpg";
@@ -291,10 +292,20 @@ const members = [
   },
   {
     title: "Member",
+    name: "Emily Ng",
+    description: "Sample Text",
+    img: EmilyNg.src,
+    linkedin: "www.linkedin.com/in/emily-ng-967934269"
+  },
+  {
+    title: "Member",
     name: "Phoebe Dungca",
     description: "Sample Text",
     img: PhoebeDungca.src,
     linkedin: "https://www.linkedin.com/in/phoebe-dungca-0bb8a7319"
+  },
+  {
+    title: "Member",
     name: "Audrey Zhang",
     description: "Sample Text",
     img: AudreyZhangImg.src,
