@@ -27,6 +27,7 @@ import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import SkaiImg from "../../assets/img/members/SkaiNzeuton.jpg";
 import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
 import JoyWang from "../../assets/img/members/JoyWang.jpg";
+import YitbrekImg from "../../assets/img/members/YitbrekMata.png";
 
 const members = [
   {
@@ -225,6 +226,13 @@ const members = [
     description: "Sample Text",
     img: JoyWang.src,
     linkedin: "https://www.linkedin.com/in/joy-wang0222/",
+  },
+  {
+    title: "Member",
+    name: "Yitbrek Mata",
+    description: "Sample Text",
+    img: YitbrekImg.src, 
+    linkedin: "https://www.linkedin.com/in/yitbrekmata/"
   }
 ];
 
