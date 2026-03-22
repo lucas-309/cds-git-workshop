@@ -23,6 +23,7 @@ import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
+import PeterOlhavaImg from "../../assets/img/members/PeterOlhava.jpg";
 
 const members = [
   {
@@ -315,6 +316,13 @@ const members = [
     img: ProfHaymHirshImg.src,
     linkedin: null, // No LinkedIn URL found in the data
   },
+  {
+    title: "Member",
+    name: "Pete Olhava",
+    description: "The GOAT",
+    img: PeterOlhavaImg.src,
+    linkedin: "https://www.linkedin.com/in/peter-olhava/",
+  }
 ];
 
 const QuantitativeFinanceSubteam: React.FC = () => {
