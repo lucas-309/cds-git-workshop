@@ -26,6 +26,7 @@ import RyanLeeImg from "../../assets/img/members/RyanLee.jpg";
 import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import SkaiImg from "../../assets/img/members/SkaiNzeuton.jpg";
 import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
+import SmritiImg from "../../assets/img/members/SmritiKumar.jpg";
 
 const members = [
   {
@@ -217,6 +218,13 @@ const members = [
     description: "Sample Text",
     img: MukundGaur.src,
     linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Smriti Kumar",
+    description: "Sample Text",
+    img: SmritiImg.src,
+    linkedin: "https://www.linkedin.com/in/smriti-kumar323/",
   },
 ];
 
