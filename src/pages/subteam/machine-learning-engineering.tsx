@@ -23,6 +23,7 @@ import SucheerMaddury from "../../assets/img/members/SucheerMaddury.jpg";
 import TakumaImg from "../../assets/img/members/TakumaOsaka.jpg";
 import YunooImg from "../../assets/img/members/YunooKim.jpg";
 import BenjaminImg from "../../assets/img/members/BenjaminLi.jpg";
+import AndyDo from "../../assets/img/members/AndyDo.jpg";
 import { default as AdenZhao, default as AndrewParkImg, default as EdwardImg, default as KaitlynImg, default as ProfDeSaImg, default as SrikarImg, default as TanishaImg, default as VincentImg, default as VishnuImg } from "../../assets/img/members/default.jpg";
 
 const members = [
@@ -221,6 +222,13 @@ const members = [
     description: "Sample Text",
     img: BenjaminImg.src,
     linkedin: "https://www.linkedin.com/in/benjamin-li-613a16230/"
+  },
+  {
+    title: "Member",
+    name: "Andy Do",
+    description: "Sample Text",
+    img: AndyDo.src,
+    linkedin: "www.linkedin.com/in/andybdo"
   },
   {
     title: "Advisor",
