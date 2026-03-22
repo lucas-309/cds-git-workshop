@@ -6,7 +6,7 @@ import AndrewDaImg from "../../assets/img/members/AndrewDa.jpg";
 import AydanGerberImg from "../../assets/img/members/AydanGerber.jpg";
 import ChenkaiImg from "../../assets/img/members/ChenkaiShen.jpg";
 import CoreyWangImg from "../../assets/img/members/CoreyWang.jpg";
-import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as AustinZhangImg, default as SophiaLuImg, default as HenryJiImg, default as DerekXuImg, default as HaochenWangImg } from "../../assets/img/members/default.jpg";
+import { default as AaravKhannaImg, default as AarshaJoshiImg, default as AdonaAntenehImg, default as AlkiviadesBoukasImg, default as AlyssaSerebrenikImg, default as AndrewChenImg, default as AryaPatelImg, default as CodyTorogovnikImg, default as EileenWuImg, default as JohnsonLinImg, default as PeterZhengImg, default as TanviKapoorImg, default as BryanChungImg, default as ConnieLuImg, default as WeiyunHsuImg, default as HenriqueAkabaneImg, default as SophiaLuImg, default as HenryJiImg, default as DerekXuImg, default as HaochenWangImg } from "../../assets/img/members/default.jpg";
 import ProfHaymHirshImg from "../../assets/img/members/ProfHaymHirsh.jpg";
 import EdwinImg from "../../assets/img/members/EdwinLin.jpg";
 import ElizabethSongImg from "../../assets/img/members/ElizabethSong.jpg";
@@ -23,6 +23,7 @@ import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
+import AustinZhangImg from "../../assets/img/members/AustinZhang.jpg";
 
 const members = [
   {
@@ -221,7 +222,7 @@ const members = [
     name: "Austin Zhang",
     description: "Sample Text",
     img: AustinZhangImg.src,
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/austin-zhang-983826376/",
   },
   {
     title: "Member",
