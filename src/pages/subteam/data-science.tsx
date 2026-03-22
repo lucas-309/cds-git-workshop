@@ -31,6 +31,7 @@ import TamaraImg from "../../assets/img/members/TamaraKasikovic.jpg";
 import TemiImg from "../../assets/img/members/Temi.jpeg";
 import TheodoreImg from "../../assets/img/members/TheodoreJeliazkov.jpg";
 import TravisImg from "../../assets/img/members/TravisZhang.jpg";
+import AudreyZhangImg from "../../assets/img/members/AudreyZhang.jpg";
 import RohanImg from "../../assets/img/members/RohanAnne.jpg"
 import { default as EmeraldImg, default as EricChenImg, default as JeromeHsu, default as JoyceImg, default as MinhImg, default as ProfWeinbergerImg, default as VarunImg, default as VivianImg } from "../../assets/img/members/default.jpg";
 
@@ -286,6 +287,13 @@ const members = [
     description: "Sample Text",
     img: JeromeHsu.src,
     linkedin: null
+  },
+  {
+    title: "Member",
+    name: "Audrey Zhang",
+    description: "Sample Text",
+    img: AudreyZhangImg.src,
+    linkedin: "https://www.linkedin.com/in/audrey-zhang07/",
   },
   {
     title: "Advisor",
