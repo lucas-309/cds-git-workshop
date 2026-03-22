@@ -222,6 +222,13 @@ const members = [
   },
   {
     title: "Member",
+    name: "Monisha Bommu",
+    description: "Sample Text",
+    img: MukundGaur.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
     name: "Joy Wang",
     description: "Sample Text",
     img: JoyWang.src,
