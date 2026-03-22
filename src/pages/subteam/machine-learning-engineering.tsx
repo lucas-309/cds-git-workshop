@@ -22,6 +22,7 @@ import SamanthaImg from "../../assets/img/members/SamanthaVaca.jpg";
 import SucheerMaddury from "../../assets/img/members/SucheerMaddury.jpg";
 import TakumaImg from "../../assets/img/members/TakumaOsaka.jpg";
 import YunooImg from "../../assets/img/members/YunooKim.jpg";
+import BenjaminImg from "../../assets/img/members/BenjaminLi.jpg";
 import { default as AdenZhao, default as AndrewParkImg, default as EdwardImg, default as KaitlynImg, default as ProfDeSaImg, default as SrikarImg, default as TanishaImg, default as VincentImg, default as VishnuImg } from "../../assets/img/members/default.jpg";
 
 const members = [
@@ -213,6 +214,13 @@ const members = [
     description: "Sample Text",
     img: EricZhou.src,
     linkedin: "https://www.linkedin.com/in/ericzzhou/",
+  },
+  {
+    title: "Member",
+    name: "Benjamin Li",
+    description: "Sample Text",
+    img: BenjaminImg.src,
+    linkedin: "https://www.linkedin.com/in/benjamin-li-613a16230/"
   },
   {
     title: "Advisor",
