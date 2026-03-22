@@ -32,6 +32,7 @@ import TemiImg from "../../assets/img/members/Temi.jpeg";
 import TheodoreImg from "../../assets/img/members/TheodoreJeliazkov.jpg";
 import TravisImg from "../../assets/img/members/TravisZhang.jpg";
 import AudreyZhangImg from "../../assets/img/members/AudreyZhang.jpg";
+import RohanImg from "../../assets/img/members/RohanAnne.jpg"
 import { default as EmeraldImg, default as EricChenImg, default as JeromeHsu, default as JoyceImg, default as MinhImg, default as ProfWeinbergerImg, default as VarunImg, default as VivianImg } from "../../assets/img/members/default.jpg";
 
 const members = [
@@ -300,6 +301,13 @@ const members = [
     description: "Sample Text",
     img: ProfWeinbergerImg.src,
     linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Rohan Anne",
+    description: "Sample Text",
+    img: RohanImg.src,
+    linkedin: "www.linkedin.com/in/rohan-anne-226b71268"
   },
 ];
 
