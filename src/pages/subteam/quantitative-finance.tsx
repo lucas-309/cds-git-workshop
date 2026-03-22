@@ -22,6 +22,7 @@ import PeterHaImg from "../../assets/img/members/PeterHa.jpg";
 import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
+import EthanLi from "../../assets/img/members/EthanLi.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
 import PeterOlhavaImg from "../../assets/img/members/PeterOlhava.jpg";
 
@@ -160,6 +161,13 @@ const members = [
     description: "Sample Text",
     img: EvanImg.src,
     linkedin: "https://www.linkedin.com/in/evan-yang-8ab12b335/",
+  },
+  {
+    title: "Member",
+    name: "Ethan Li",
+    description: "Sample Text",
+    img: EthanLi.src,
+    linkedin: "www.linkedin.com/in/ethanli02",
   },
   {
     title: "Member",
