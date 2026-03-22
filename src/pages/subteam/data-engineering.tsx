@@ -218,6 +218,13 @@ const members = [
     img: MukundGaur.src,
     linkedin: null,
   },
+  {
+    title: "Member",
+    name: "Monisha Bommu",
+    description: "Sample Text",
+    img: MukundGaur.src,
+    linkedin: null,
+  },
 ];
 
 const DataEngineeringSubteam: React.FC = () => {
