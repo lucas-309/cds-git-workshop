@@ -11,6 +11,7 @@ import DarrenImg from "../../assets/img/members/DarrenKey.jpg";
 import DenizImg from "../../assets/img/members/DenizBoloni-Turgut.jpg";
 import EricDoImg from "../../assets/img/members/EricDo.jpg";
 import EricGuoImg from "../../assets/img/members/EricGuo.jpg";
+import EmilyNgImg from "../../assets/img/members/EmilyNg.jpg";
 import ImaniImg from "../../assets/img/members/ImaniFinkley.jpg";
 import JakobImg from "../../assets/img/members/JakobSilver.jpg";
 import JasonImg from "../../assets/img/members/JasonZheng.jpg";
@@ -285,6 +286,13 @@ const members = [
     description: "Sample Text",
     img: JeromeHsu.src,
     linkedin: null
+  },
+  {
+    title: "Member",
+    name: "Emily Ng",
+    description: "Sample Text",
+    img: EmilyNg.src,
+    linkedin: "www.linkedin.com/in/emily-ng-967934269"
   },
   {
     title: "Advisor",
