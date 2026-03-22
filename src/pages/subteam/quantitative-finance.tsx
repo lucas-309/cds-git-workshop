@@ -23,6 +23,8 @@ import RohanShahImg from "../../assets/img/members/RohanShah.jpg";
 import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
+import SophiaLuImg from "../../assets/img/members/SantiagoPalacios.jpg";
+
 
 const members = [
   {
@@ -228,7 +230,7 @@ const members = [
     name: "Sophia Lu",
     description: "Sample Text",
     img: SophiaLuImg.src,
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/sophia-lu-3aa342382/",
   },
 
   {
