@@ -8,6 +8,7 @@ import AudreyImg from "../../assets/img/members/AudreyWang.jpg";
 import BossImg from "../../assets/img/members/BossLerdamnrongwong.jpg";
 import CadeImg from "../../assets/img/members/CadeJin.jpg";
 import DarrenImg from "../../assets/img/members/DarrenKey.jpg";
+import DuruAlayliImg from "../../assets/img/members/DuruAlayli.jpg";
 import DenizImg from "../../assets/img/members/DenizBoloni-Turgut.jpg";
 import EricDoImg from "../../assets/img/members/EricDo.jpg";
 import EricGuoImg from "../../assets/img/members/EricGuo.jpg";
@@ -292,6 +293,12 @@ const members = [
   },
   {
     title: "Member",
+    name: "Duru Alayli",
+    description: "Sample Text",
+    img: DuruAlayliImg.src,
+    linkedin: "https://www.linkedin.com/in/duru-alayl%C4%B1-265162248/"
+  },
+  {
     name: "Emily Ng",
     description: "Sample Text",
     img: EmilyNg.src,
