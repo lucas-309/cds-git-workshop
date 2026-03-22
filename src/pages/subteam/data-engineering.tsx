@@ -26,6 +26,7 @@ import RyanLeeImg from "../../assets/img/members/RyanLee.jpg";
 import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import SkaiImg from "../../assets/img/members/SkaiNzeuton.jpg";
 import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
+import YitbrekImg from "../../assets/img/members/YitbrekMata.png";
 
 const members = [
   {
@@ -218,6 +219,13 @@ const members = [
     img: MukundGaur.src,
     linkedin: null,
   },
+  {
+    title: "Member",
+    name: "Yitbrek Mata",
+    description: "Sample Text",
+    img: YitbrekImg.src, 
+    linkedin: "https://www.linkedin.com/in/yitbrekmata/"
+  }
 ];
 
 const DataEngineeringSubteam: React.FC = () => {
