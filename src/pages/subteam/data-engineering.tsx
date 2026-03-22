@@ -248,6 +248,12 @@ const members = [
     description: "Sample Text",
     img: YitbrekImg.src, 
     linkedin: "https://www.linkedin.com/in/yitbrekmata/"
+
+    title: "Member",
+    name: "Eric Sun",
+    description: "Sample Text",
+    img: null, 
+    linkedin: "https://www.linkedin.com/in/esun366/"
   }
 ];
 
