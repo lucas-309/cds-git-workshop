@@ -26,6 +26,9 @@ import RyanLeeImg from "../../assets/img/members/RyanLee.jpg";
 import SabrinaImg from "../../assets/img/members/SabrinaNing.jpg";
 import SkaiImg from "../../assets/img/members/SkaiNzeuton.jpg";
 import SrishaImg from "../../assets/img/members/SrishaGaur.jpg";
+import SmritiImg from "../../assets/img/members/SmritiKumar.jpg";
+import JoyWang from "../../assets/img/members/JoyWang.jpg";
+import YitbrekImg from "../../assets/img/members/YitbrekMata.png";
 
 const members = [
   {
@@ -218,6 +221,34 @@ const members = [
     img: MukundGaur.src,
     linkedin: null,
   },
+  {
+    title: "Member",
+    name: "Smriti Kumar",
+    description: "Sample Text",
+    img: SmritiImg.src,
+    linkedin: "https://www.linkedin.com/in/smriti-kumar323/",
+  },
+  {
+    title: "Member",
+    name: "Monisha Bommu",
+    description: "Sample Text",
+    img: MukundGaur.src,
+    linkedin: null,
+  },
+  {
+    title: "Member",
+    name: "Joy Wang",
+    description: "Sample Text",
+    img: JoyWang.src,
+    linkedin: "https://www.linkedin.com/in/joy-wang0222/",
+  },
+  {
+    title: "Member",
+    name: "Yitbrek Mata",
+    description: "Sample Text",
+    img: YitbrekImg.src, 
+    linkedin: "https://www.linkedin.com/in/yitbrekmata/"
+  }
 ];
 
 const DataEngineeringSubteam: React.FC = () => {
