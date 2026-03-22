@@ -32,6 +32,9 @@ import TamaraImg from "../../assets/img/members/TamaraKasikovic.jpg";
 import TemiImg from "../../assets/img/members/Temi.jpeg";
 import TheodoreImg from "../../assets/img/members/TheodoreJeliazkov.jpg";
 import TravisImg from "../../assets/img/members/TravisZhang.jpg";
+import PhoebeImg from "../../assets/img/members/PhoebeDungca.jpg";
+import AudreyZhangImg from "../../assets/img/members/AudreyZhang.jpg";
+import RohanImg from "../../assets/img/members/RohanAnne.jpg"
 import { default as EmeraldImg, default as EricChenImg, default as JeromeHsu, default as JoyceImg, default as MinhImg, default as ProfWeinbergerImg, default as VarunImg, default as VivianImg } from "../../assets/img/members/default.jpg";
 
 const members = [
@@ -295,11 +298,32 @@ const members = [
     linkedin: "www.linkedin.com/in/emily-ng-967934269"
   },
   {
+    title: "Member",
+    name: "Phoebe Dungca",
+    description: "Sample Text",
+    img: PhoebeDungca.src,
+    linkedin: "https://www.linkedin.com/in/phoebe-dungca-0bb8a7319"
+  },
+  {
+    title: "Member",
+    name: "Audrey Zhang",
+    description: "Sample Text",
+    img: AudreyZhangImg.src,
+    linkedin: "https://www.linkedin.com/in/audrey-zhang07/",
+  },
+  {
     title: "Advisor",
     name: "Prof. Kilian Weinberger",
     description: "Sample Text",
     img: ProfWeinbergerImg.src,
     linkedin: null, // No LinkedIn URL found in the data
+  },
+  {
+    title: "Member",
+    name: "Rohan Anne",
+    description: "Sample Text",
+    img: RohanImg.src,
+    linkedin: "www.linkedin.com/in/rohan-anne-226b71268"
   },
 ];
 
