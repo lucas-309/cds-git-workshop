@@ -24,6 +24,8 @@ import RonaldFeng from "../../assets/img/members/RonaldFeng.jpg";
 import SamaraSilvermanImg from "../../assets/img/members/SamaraSilverman.jpg";
 import EthanLi from "../../assets/img/members/EthanLi.jpg";
 import SantiagoPalaciosImg from "../../assets/img/members/SantiagoPalacios.jpg";
+import SophiaLuImg from "../../assets/img/members/SantiagoPalacios.jpg";
+
 import AustinZhangImg from "../../assets/img/members/AustinZhang.jpg";
 import PeterOlhavaImg from "../../assets/img/members/PeterOlhava.jpg";
 
@@ -238,7 +240,7 @@ const members = [
     name: "Sophia Lu",
     description: "Sample Text",
     img: SophiaLuImg.src,
-    linkedin: null,
+    linkedin: "https://www.linkedin.com/in/sophia-lu-3aa342382/",
   },
 
   {
