@@ -301,14 +301,14 @@ const members = [
   {
     name: "Emily Ng",
     description: "Sample Text",
-    img: EmilyNg.src,
+    img: EmilyNgImg.src,
     linkedin: "www.linkedin.com/in/emily-ng-967934269"
   },
   {
     title: "Member",
     name: "Phoebe Dungca",
     description: "Sample Text",
-    img: PhoebeDungca.src,
+    img: PhoebeImg.src,
     linkedin: "https://www.linkedin.com/in/phoebe-dungca-0bb8a7319"
   },
   {
